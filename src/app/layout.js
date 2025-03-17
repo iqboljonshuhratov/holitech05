@@ -21,8 +21,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          backgroundImage:
+            "linear-gradient(0turn, rgba(0, 238, 255, 1) 0%, rgba(0, 194, 241, 1) 100%)",
+        }}
       >
-        {children}
+        <div className="container">{children}</div>
       </body>
     </html>
   );
